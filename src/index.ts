@@ -3,7 +3,7 @@ import glob from 'tiny-glob';
 import { CompletionItem, CompletionList, Position, TextDocument } from 'vscode-languageserver-protocol';
 import { BaseTemplate } from './baseTemplate';
 
-const DOCUMENT_SELECTOR: string[] = ['typescript', 'javascript', 'go'];
+const DOCUMENT_SELECTOR: string[] = ['typescript', 'javascript', 'go', 'python'];
 
 class PostfixCompletionProvider implements CompletionItemProvider {
   private templates: BaseTemplate[] = [];
